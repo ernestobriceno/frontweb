@@ -1,0 +1,52 @@
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #006de2; /* You can customize the color */
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.custom-calendar {
+width: 100%; /* Hacer que el calendario ocupe el 100% del ancho del contenedor padre */
+max-width: 800px; /* Establecer un ancho máximo para evitar que el calendario sea demasiado ancho en pantallas grandes */
+font-size: 18px; /* Ajustar el tamaño de fuente del calendario */
+}
+
+.react-calendar {
+max-width: 800px; /* Ajustar el ancho máximo del calendario */
+margin: 0 auto; /* Centrar el calendario dentro del contenedor */
+font-size: 18px; /* Ajustar el tamaño de fuente del calendario */
+}
+
+.react-calendar__month-view {
+padding: 15px; /* Aumentar el espacio interior del mes para que se vea más grande */
+}
+
+.selected-dot {
+background-color: #ffffff; /* Color del punto indicador cuando el día está seleccionado */
+}
+
+.center-title {
+text-align: center;
+}
+
+
+.today, .selected-day {
+background-color: #006de2;
+color: white;
+border-radius: 100%;
+}
+
+.today {
+background-color: #006de2;
+color: rgb(0, 0, 0); /* Ajusta el color del texto del día actual */
+border-radius: 100%;
+}
+
+.selected-day, .today:enabled:hover,
+.react-calendar__tile--active {
+background-color: #006de2 !important; /* Establece el color de fondo del día seleccionado y del día actual */
+color: white !important; /* Ajusta el color del texto del día seleccionado */
+border-radius: 100%;
+}
+
